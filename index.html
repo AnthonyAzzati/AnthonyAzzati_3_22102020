@@ -18,12 +18,6 @@
             <img src="./public/img/logo/ohmyfood@2x.svg" alt="logo de Ohmyfood" class="nav__logo">
         </nav>        
 
-        <section class="presentation">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            <button class="main__btn--bg">Explorez nos restaurants</button>
-        </section>
-            
         <form class="search__form" action="#" method="post"> 
             <label class="search__form__icon">
                 <i class="fas fa-map-marker-alt"></i>
@@ -31,19 +25,25 @@
             <input class="search__form__text" type="text" name="research" id="research" placeholder="Ville, quartier">
         </form>
 
+        <section class="presentation">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+            <button class="main__btn--bg">Explorez nos restaurants</button>
+        </section>
+
         <section class="desc">
             <h2>Fonctionnement</h2>
-            <ol>
-                <li class="desc--bg"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
-                <li class="desc--bg"><i class="fas fa-list-ul"></i>Composez votre menu</li>
-                <li class="desc--bg"><i class="fas fa-store"></i>Dégustez au restaurant</li>
-            </ol>
+            <ul class="desc__list">
+                <li class="desc__list--bg"><p class="desc__list--number">1</p><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
+                <li class="desc__list--bg"><p class="desc__list--number">2</p><i class="fas fa-list-ul"></i>Composez votre menu</li>
+                <li class="desc__list--bg"><p class="desc__list--number">3</p><i class="fas fa-store"></i>Dégustez au restaurant</li>
+            </ul>
         </section>
     </header>
 
 
     <main>
-        <h3>Restaurants</h3>
+        <h3 id="restaurants">Restaurants</h3>
         <figure>
             <a href="la-palette-du-gout.html">
                 <img src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat du restaurant La palette du goût à Paris Ménilmontant">
