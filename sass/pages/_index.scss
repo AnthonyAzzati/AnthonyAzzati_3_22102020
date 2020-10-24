@@ -100,5 +100,53 @@ header,
     }
     i {
         @include light-black;
+        margin-right: 15px;
     }
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    @include grey-bg;
+}
+
+figure {
+    align-self: center;
+    border-radius: 20px;
+    background-color: white;
+    margin: 10px 0;
+    @include box-shadow;
+    width: 335px;
+    img {
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 175px;
+        width: 100%;
+    }
+    h4 {
+        position: absolute;
+        padding: 7px 10px;
+        margin: 10px 0 0 240px;
+        @include new-overlay;
+    }
+    div {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    h5,
+    p {
+        margin: 0;
+    }
+    h5 {
+        font-size: 1.2rem;
+    }
+}    
+
+.btn__heart {
+    background: none;
+    border: none;
+}
+
+

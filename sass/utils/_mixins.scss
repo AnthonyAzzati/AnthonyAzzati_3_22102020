@@ -20,3 +20,9 @@
     padding: 0 20px 0 20px;
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.3);
 }
+
+@mixin new-overlay {
+    background-color: $mint;
+    border-radius: 5px;
+    color: darken($mint, 35%);
+}
