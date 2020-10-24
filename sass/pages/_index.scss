@@ -70,35 +70,107 @@ header,
         align-self: flex-start;
         margin: 30px 0 15px 25px;
     }
+    &__list {
+        padding: 0;
+        margin: 0;
+        i {
+            width: 20px;
+        }
+        &--bg {
+            display: flex;
+            justify-content: flex;
+            align-items: center;
+            background-color: $light-grey;
+            border-radius: 15px;
+            margin-top: 25px;
+            width: 325px;
+            height: 60px;
+            @include box-shadow;    
+        }
+        &--number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            right: 14px;
+            background-color: $color-primary;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+        }
+        i {
+            @include light-black;
+            margin-right: 15px;
+        }
+    }
 }
 
-.desc__list {
-    padding: 0;
-    margin: 0;
-    &--bg {
-        display: flex;
-        justify-content: flex;
-        align-items: center;
-        background-color: $light-grey;
-        border-radius: 15px;
-        margin-top: 25px;
-        width: 325px;
-        height: 60px;
-        @include box-shadow;    
+main {
+    display: flex;
+    flex-direction: column;
+    @include grey-bg;
+    padding-bottom: 50px;
+    h3 {
+        font-size: 1.5rem;
+        margin: 50px 0 20px 20px;
     }
-    &--number {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        right: 14px;
-        background-color: $color-primary;
-        color: white;
-        width: 25px;
-        height: 25px;
-        border-radius: 100%;
+    figure {
+        align-self: center;
+        border-radius: 20px;
+        background-color: white;
+        margin: 10px 0;
+        @include box-shadow;
+        width: 335px;
+        img {
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 175px;
+            width: 100%;
+        }
+        h4 {
+            position: absolute;
+            padding: 7px 10px;
+            margin: 10px 0 0 240px;
+            @include new-overlay;
+        }
+        div {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+        }
+        h5,
+        p {
+            margin: 0;
+        }
+        h5 {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.btn__heart {
+    background: none;
+    border: none;
+}
+
+footer {
+    color: white;
+    @include dark-grey-bg;
+    h6 {
+        font-size: 1.2rem;
+        font-weight: lighter;
+        margin: 0;
+        padding: 25px 0 20px 20px;
+    }
+    ul {
+        line-height: 1.5rem;
+        margin: 0;
+        padding: 0 0 25px 20px;
     }
     i {
-        @include light-black;
+        width: 20px;
+        padding-right: 10px;
     }
 }
