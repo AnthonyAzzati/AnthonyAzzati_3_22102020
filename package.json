@@ -1,12 +1,12 @@
 {
   "name": "ohmyfood",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:public/css/style.css --style compressed"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "browserslist": "last 4 versions"
 }
