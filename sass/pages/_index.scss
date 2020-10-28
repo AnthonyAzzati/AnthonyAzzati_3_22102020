@@ -78,7 +78,6 @@ header,
         }
         &--bg {
             display: flex;
-            justify-content: flex;
             align-items: center;
             background-color: $light-grey;
             border-radius: 15px;
@@ -102,6 +101,9 @@ header,
         i {
             @include light-black;
             margin-right: 15px;
+        }
+        li {
+            font-weight: bold;
         }
     }
 }
