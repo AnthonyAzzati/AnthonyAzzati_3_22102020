@@ -1,16 +1,12 @@
 .nav,
-body,
-.restaurant,
-.restautant__desc {
+main,
+.restaurant {
     display: flex;
 }
 
-body {
+main {
     flex-direction: column;
-}
-
-body {
-    background-color: $light-grey;   
+    background-color: $light-grey; 
 }
 
 .nav {
@@ -28,13 +24,16 @@ body {
     flex-direction: column;
     &__title {
         margin: 0;
+        font-weight: bold;
     }
     &__desc {
-        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
     }
     &__img {
         object-fit: cover;
         width: 375px;
     }
 }
-
