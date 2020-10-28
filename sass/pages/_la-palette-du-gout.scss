@@ -1,8 +1,12 @@
 header,
 nav,
-main,
-.main__title {
+body,
+.restaurant__title {
     display: flex;
+}
+
+body {
+    flex-direction: column;
 }
 
 .nav {
@@ -16,6 +20,7 @@ main,
 }
 
 .header__img {
+    object-fit: cover;
     width: 375px;
 }
 
