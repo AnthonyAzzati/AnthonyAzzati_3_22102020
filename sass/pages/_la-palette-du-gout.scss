@@ -1,0 +1,21 @@
+header,
+nav,
+main,
+.main__title {
+    display: flex;
+}
+
+.nav {
+    flex-direction: row;
+    align-items: center;
+    i {
+        position: relative;
+        right: 55px;
+        color: black;
+    }
+}
+
+.header__img {
+    width: 375px;
+}
+
