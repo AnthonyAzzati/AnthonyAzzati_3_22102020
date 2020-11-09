@@ -1,0 +1,43 @@
+.nav,
+main,
+.restaurant {
+    display: flex;
+}
+
+.rest__menu {
+    background-color: white;
+    flex-direction: column;
+}
+
+.nav {
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    i {
+        position: relative;
+        right: 55px;
+        color: black;
+    }
+}  
+
+.restaurant {
+    flex-direction: column;
+    &__title {
+        margin: 0;
+        font-weight: bold;
+    }
+    &__desc {
+        position: absolute;
+        top: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    &__img {
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+    }
+}
