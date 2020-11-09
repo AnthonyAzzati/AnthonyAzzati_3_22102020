@@ -27,12 +27,15 @@ main,
         font-weight: bold;
     }
     &__desc {
+        position: absolute;
+        top: 300px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
     }
     &__img {
+        position: relative;
         object-fit: cover;
         width: 100%;
         height: 300px;
