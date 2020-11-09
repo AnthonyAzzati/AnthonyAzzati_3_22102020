@@ -67,11 +67,8 @@ main,
     &__sub {
         display: flex;
         flex-direction: column;
-        background-color: white;
-        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
-        margin: 0 15px 15px 0;
         padding: 10px;
+        @include meal-bg;
         &__details {
             display: flex;
             justify-content: space-between;
