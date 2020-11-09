@@ -43,6 +43,7 @@ header,
         font-weight: bold;
         width: 100px;
         height: 20px;
+        font-size: 1rem;
     }
 }
 
@@ -73,6 +74,9 @@ header,
     &__list {
         padding: 0;
         margin: 0;
+        p {
+            font-size: 14px;
+        }
         i {
             width: 20px;
         }
@@ -135,23 +139,25 @@ main {
             height: 175px;
             width: 100%;
         }
-        h4 {
-            position: absolute;
-            padding: 7px 10px;
-            margin: 10px 0 0 240px;
-            @include new-overlay;
-        }
         div {
             display: flex;
             justify-content: space-between;
             padding: 15px;
         }
-        h5,
+        h4,
         p {
             margin: 0;
         }
-        h5 {
+        h4 {
             font-size: 1.2rem;
         }
     }
+}
+
+.new {
+    position: absolute;
+    padding: 7px 10px;
+    margin: 10px 0 0 240px;
+    @include new-overlay;
+ 
 }
