@@ -5,8 +5,9 @@ main,
 }
 
 .rest__menu {
-    background-color: $light-grey;
     flex-direction: column;
+    background-color: $light-grey;
+    padding-bottom: 40px;
 }
 
 .nav {
@@ -51,11 +52,54 @@ main,
 
 .section {
     margin-left: 15px;
+    h2 {
+        margin-bottom: 0;
+        font-size: 1.2rem;
+        font-weight: lighter;
+        text-transform: uppercase;
+    }
+    hr {
+        margin: 5px 0 15px 0;
+        border-style: solid;
+        color: $color-tertiary;
+        width: 13%;
+    }
     &__sub {
-        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        margin: 0 15px 15px 0;
+        padding: 10px;
+        &__details {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        p {
+            margin: 0;
+        }
     }
 }
 
 .meal {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+    &__desc{
+        font-size: 15px;
+    }
+}
+
+.price {
     margin: 0;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+.order {
+    align-self: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 190px;
 }
