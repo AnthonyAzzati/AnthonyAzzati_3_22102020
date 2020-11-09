@@ -72,7 +72,10 @@ header,
         margin: 30px 0 15px 25px;
     }
     &__list {
-        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 25px;
         margin: 0;
         p {
             font-size: 14px;
@@ -85,6 +88,7 @@ header,
             align-items: center;
             background-color: $light-grey;
             border-radius: 15px;
+            margin-right: 25px;
             margin-top: 25px;
             width: 325px;
             height: 60px;
@@ -113,8 +117,8 @@ header,
 }
 
 main {
-    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     @include grey-bg;
     padding-bottom: 50px;
     h3 {
@@ -154,10 +158,42 @@ main {
     }
 }
 
+.main__cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .new {
     position: absolute;
     padding: 7px 10px;
     margin: 10px 0 0 240px;
     @include new-overlay;
  
+}
+
+@media screen and (min-width: 768px) {
+    footer ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 0 25px 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main__cards {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0 50px;
+    }
+
+    .figure {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main__cards {
+        padding: 0;
+    }
 }
