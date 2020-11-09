@@ -255,8 +255,17 @@ main figure h4 {
   }
 }
 @media screen and (min-width: 1440px) {
+  .desc h2,
+.restaurants {
+    margin-left: 100px;
+  }
+
   .main__cards {
     padding: 0;
+  }
+
+  footer h5 {
+    margin-left: 50px;
   }
 }
 .nav,
