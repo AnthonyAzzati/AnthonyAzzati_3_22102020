@@ -378,8 +378,12 @@ main,
   }
 }
 @media screen and (min-width: 1440px) {
-  .restaurant__desc,
-.section {
+  .restaurant__desc {
+    padding-left: 225px;
+    padding-right: 225px;
+  }
+
+  .section {
     padding-left: 200px;
     padding-right: 200px;
   }
