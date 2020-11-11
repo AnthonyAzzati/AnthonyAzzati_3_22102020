@@ -15,7 +15,7 @@ ul {
 } */
 
 .main__btn--bg {
-    transition: 200ms ease-out;
+    transition: 200ms ease-in;
     &:hover {
         @include main__btn-hover;
     }

@@ -14,11 +14,12 @@ ul {
     }
 } */
 .main__btn--bg {
-  transition: 200ms ease-out;
+  transition: 200ms ease-in;
 }
 .main__btn--bg:hover {
   filter: brightness(1.1);
-  box-shadow: 17px 17px 33px #cecece, -17px -17px 33px #ffffff;
+  box-shadow: inset 0px 0px 20px 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
   transform: translateY(-3px);
 }
 
@@ -139,7 +140,7 @@ header p,
   font-size: 1rem;
   height: 50px;
   padding: 0 20px 0 20px;
-  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 17px 17px 33px #cecece, -17px -17px 33px #ffffff;
   margin: 25px 0 25px 0;
 }
 
