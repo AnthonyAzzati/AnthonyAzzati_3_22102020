@@ -113,14 +113,22 @@ main,
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .restaurant__desc {
-        padding-left: 225px;
-        padding-right: 225px;
-    }
+@media screen and (min-width: 1024px) {
+    .restaurant__desc,
     .section {
         padding-left: 200px;
         padding-right: 200px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .restaurant__desc {
+        padding-left: 425px;
+        padding-right: 425px;
+    }
+    .section {
+        padding-left: 400px;
+        padding-right: 400px;
     }
     footer h5 {
         padding-left: 50px;
