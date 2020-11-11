@@ -172,35 +172,3 @@ main {
  
 }
 
-@media screen and (min-width: 768px) {
-    footer ul {
-        display: flex;
-        justify-content: space-around;
-        padding: 0 0 25px 0;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .main__cards {
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding: 0 50px;
-    }
-
-    .figure {
-        margin: auto;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .desc h2,
-    .restaurants{
-        margin-left: 100px;
-    }
-    .main__cards {
-        padding: 0;
-    }
-    footer h5 {
-        margin-left: 50px;
-    }
-}
