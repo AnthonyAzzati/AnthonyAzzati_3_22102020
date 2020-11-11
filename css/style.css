@@ -196,6 +196,10 @@ main figure {
   margin: 10px 0;
   box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
   width: 335px;
+  transition: 200ms ease-out;
+}
+main figure:hover {
+  transform: scale(1.05);
 }
 main figure a {
   color: black;
