@@ -25,11 +25,16 @@
     box-shadow: 17px 17px 33px #cecece, 
                 -17px -17px 33px #ffffff;
 }
+
 @mixin main__btn-hover {
     filter: brightness(1.1);
     box-shadow: inset 0px 0px 20px 20px rgba(255,255,255,0.1);
     box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.3);
     transform:  translateY(-3px);
+}
+
+@mixin desc-bg-hover {
+    background-color: lighten($color-primary, 35%);
 }
 
 @mixin new-overlay {

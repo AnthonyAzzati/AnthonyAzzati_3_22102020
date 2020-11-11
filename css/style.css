@@ -164,17 +164,6 @@ header p,
 .desc__list i {
   width: 20px;
 }
-.desc__list--bg {
-  display: flex;
-  align-items: center;
-  background-color: #F2F2F2;
-  border-radius: 15px;
-  margin-right: 25px;
-  margin-top: 25px;
-  width: 325px;
-  height: 60px;
-  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
-}
 .desc__list--number {
   display: flex;
   justify-content: center;
@@ -193,6 +182,21 @@ header p,
 }
 .desc__list li {
   font-weight: bold;
+}
+.desc__list--bg {
+  display: flex;
+  align-items: center;
+  background-color: #F2F2F2;
+  border-radius: 15px;
+  margin-right: 25px;
+  margin-top: 25px;
+  width: 325px;
+  height: 60px;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
+  transition: 200ms ease-in-out;
+}
+.desc__list--bg:hover {
+  background-color: #f2eafb;
 }
 
 main {
