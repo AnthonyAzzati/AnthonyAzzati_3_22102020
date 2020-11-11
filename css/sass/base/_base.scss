@@ -14,6 +14,13 @@ ul {
     }
 } */
 
+.main__btn--bg {
+    transition: 200ms ease-out;
+    &:hover {
+        @include main__btn-hover;
+    }
+}
+
 footer {
     color: white;
     @include dark-grey-bg;

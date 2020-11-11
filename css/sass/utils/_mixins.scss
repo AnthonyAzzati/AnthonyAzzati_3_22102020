@@ -17,12 +17,18 @@
 @mixin main__btn--display {
     border: none;
     border-radius: 50px;
-    background: linear-gradient(360deg,$color-primary 0%,$color-secondary 100%);
+    background: $gradient-color;
     color: white;
     font-size: 1rem;
     height: 50px;
     padding: 0 20px 0 20px;
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.3);
+}
+@mixin main__btn-hover {
+    filter: brightness(1.1);
+    box-shadow: 17px 17px 33px #cecece, 
+                -17px -17px 33px #ffffff;
+    transform:  translateY(-3px);
 }
 
 @mixin new-overlay {
