@@ -37,3 +37,7 @@
     border-radius: 15px;
     margin: 0 15px 15px 0;
 }
+
+@mixin heart-focus {
+    background: linear-gradient(180deg,$color-primary 0%,$color-secondary 100%);
+}

@@ -7,6 +7,13 @@ ul {
     list-style-type: none;
 }
 
+/*.fa-heart {
+    transition: 200ms ease-in-out;
+    &:hover {
+        background-color: blue;
+    }
+} */
+
 footer {
     color: white;
     @include dark-grey-bg;

@@ -12,6 +12,8 @@
         padding-right: 100px;
     }
     footer {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-content: center;
         h5 {
@@ -19,9 +21,13 @@
             padding: 25px;
         }
         ul {
+            display: flex;
             flex-direction: column;
-            align-items: center;
+            align-self: center;
+            justify-content: center;
+            padding: 0 0 25px 0;
             li {
+                align-self: center;
                 line-height: 1.6rem;
             }
         }

@@ -7,6 +7,12 @@ ul {
   list-style-type: none;
 }
 
+/*.fa-heart {
+    transition: 200ms ease-in-out;
+    &:hover {
+        background-color: blue;
+    }
+} */
 footer {
   color: white;
   background-color: #333333;
@@ -196,6 +202,10 @@ main figure {
   margin: 10px 0;
   box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
   width: 335px;
+  transition: 200ms ease-out;
+}
+main figure:hover {
+  transform: scale(1.05);
 }
 main figure a {
   color: black;
@@ -359,6 +369,8 @@ main,
   }
 
   footer {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
   }
@@ -367,10 +379,14 @@ main,
     padding: 25px;
   }
   footer ul {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    align-self: center;
+    justify-content: center;
+    padding: 0 0 25px 0;
   }
   footer ul li {
+    align-self: center;
     line-height: 1.6rem;
   }
 }
