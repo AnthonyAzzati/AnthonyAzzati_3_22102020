@@ -7,19 +7,39 @@ ul {
     list-style-type: none;
 }
 
-/*.fa-heart {
-    transition: 200ms ease-in-out;
-    &:hover {
-        background-color: blue;
-    }
-} */
-
 .main__btn--bg {
     transition: 200ms ease-in;
     &:hover {
         @include main__btn-hover;
     }
 }
+
+.heart {
+    position:relative;
+    z-index:1;
+    &:hover {
+        @include heart-focus;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &:hover .heart-bg {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.heart-bg{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+    @include heart-focus;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity:0;
+    transform: scale(0);
+    transition:.3s ease;
+} 
 
 footer {
     color: white;
