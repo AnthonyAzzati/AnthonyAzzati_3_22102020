@@ -1,3 +1,13 @@
+@keyframes upward {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 body {
   margin: 0;
   min-width: 375px;
@@ -385,6 +395,48 @@ main,
   font-weight: bold;
   font-size: 1.1rem;
   width: 190px;
+}
+
+.entrance {
+  animation: upward 500ms ease-in-out both;
+}
+.entrance__1 {
+  animation: upward 500ms 0.2s ease-in-out both;
+}
+.entrance__2 {
+  animation: upward 500ms 0.3s ease-in-out both;
+}
+.entrance__3 {
+  animation: upward 500ms 0.4s ease-in-out both;
+}
+.entrance__4 {
+  animation: upward 500ms 0.5s ease-in-out both;
+}
+
+.main-dish {
+  animation: upward 500ms 0.6s ease-in-out both;
+}
+.main-dish__1 {
+  animation: upward 500ms 0.7s ease-in-out both;
+}
+.main-dish__2 {
+  animation: upward 500ms 0.8s ease-in-out both;
+}
+.main-dish__3 {
+  animation: upward 500ms 0.9s ease-in-out both;
+}
+
+.dessert {
+  animation: upward 500ms 1s ease-in-out both;
+}
+.dessert__1 {
+  animation: upward 500ms 1.1s ease-in-out both;
+}
+.dessert__2 {
+  animation: upward 500ms 1.2s ease-in-out both;
+}
+.dessert__3 {
+  animation: upward 500ms 1.3s ease-in-out both;
 }
 
 @media screen and (min-width: 768px) {
