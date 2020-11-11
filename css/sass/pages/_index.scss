@@ -83,17 +83,6 @@ header,
         i {
             width: 20px;
         }
-        &--bg {
-            display: flex;
-            align-items: center;
-            background-color: $light-grey;
-            border-radius: 15px;
-            margin-right: 25px;
-            margin-top: 25px;
-            width: 325px;
-            height: 60px;
-            @include box-shadow;    
-        }
         &--number {
             display: flex;
             justify-content: center;
@@ -112,6 +101,21 @@ header,
         }
         li {
             font-weight: bold;
+        }
+        &--bg {
+            display: flex;
+            align-items: center;
+            background-color: $light-grey;
+            border-radius: 15px;
+            margin-right: 25px;
+            margin-top: 25px;
+            width: 325px;
+            height: 60px;
+            @include box-shadow;
+            transition: 200ms ease-in-out;  
+            &:hover {
+                @include desc-bg-hover;
+            }  
         }
     }
 }
