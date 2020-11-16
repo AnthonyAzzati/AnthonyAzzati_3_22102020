@@ -58,10 +58,10 @@ ul {
 }
 
 .heart-bg {
+  z-index: -1;
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -1;
   background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -177,9 +177,9 @@ header p,
   background: none;
   border: none;
   font-weight: bold;
+  font-size: 1rem;
   width: 100px;
   height: 20px;
-  font-size: 1rem;
 }
 
 .presentation {
@@ -218,8 +218,8 @@ header p,
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-left: 25px;
   margin: 0;
+  padding-left: 25px;
 }
 .desc__list p {
   font-size: 14px;
@@ -228,16 +228,16 @@ header p,
   width: 20px;
 }
 .desc__list--number {
+  position: relative;
+  right: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  right: 14px;
   background-color: #9356DC;
+  border-radius: 100%;
   color: white;
   width: 25px;
   height: 25px;
-  border-radius: 100%;
 }
 .desc__list i {
   color: #595959;
@@ -266,8 +266,8 @@ header p,
 main {
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: #e5e5e5;
   padding-bottom: 50px;
+  background-color: #e5e5e5;
 }
 main h3 {
   font-size: 1.5rem;
@@ -275,11 +275,11 @@ main h3 {
 }
 main figure {
   align-self: center;
-  border-radius: 20px;
   background-color: white;
+  border-radius: 20px;
   margin: 10px 0;
-  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
   width: 335px;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
   transition: 200ms ease-out;
 }
 main figure:hover {
@@ -369,11 +369,11 @@ main,
   top: 280px;
   display: flex;
   justify-content: space-between;
-  padding: 30px 40px 20px 20px;
   align-items: center;
+  background-color: #F2F2F2;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
-  background-color: #F2F2F2;
+  padding: 30px 40px 20px 20px;
 }
 
 .section {
@@ -386,10 +386,10 @@ main,
   text-transform: uppercase;
 }
 .section hr {
-  margin: 5px 0 15px 0;
   border-style: solid;
-  color: #99E2D0;
+  margin: 5px 0 15px 0;
   width: 13%;
+  color: #99E2D0;
 }
 .section__sub {
   display: flex;
@@ -501,8 +501,8 @@ main,
   footer ul {
     display: flex;
     flex-direction: column;
-    align-self: center;
     justify-content: center;
+    align-self: center;
     padding: 0 0 25px 0;
   }
   footer ul li {
