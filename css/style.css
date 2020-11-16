@@ -260,6 +260,7 @@ header p,
 }
 .desc__list--bg:hover {
   background-color: #f2eafb;
+  transform: scale(1.05);
 }
 
 main {
