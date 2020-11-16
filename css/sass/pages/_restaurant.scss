@@ -42,11 +42,11 @@ main,
         top: 280px;
         display: flex;
         justify-content: space-between;
-        padding: 30px 40px 20px 20px;
         align-items: center;
+        background-color: $light-grey;
         border-top-left-radius: 45px;
         border-top-right-radius: 45px;
-        background-color: $light-grey;
+        padding: 30px 40px 20px 20px;
     }
 }
 
@@ -59,10 +59,10 @@ main,
         text-transform: uppercase;
     }
     hr {
-        margin: 5px 0 15px 0;
         border-style: solid;
-        color: $color-tertiary;
+        margin: 5px 0 15px 0;
         width: 13%;
+        color: $color-tertiary;
     }
     &__sub {
         display: flex;
