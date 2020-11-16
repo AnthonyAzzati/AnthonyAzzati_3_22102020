@@ -35,6 +35,7 @@
 
 @mixin desc-bg-hover {
     background-color: lighten($color-primary, 35%);
+    transform: scale(1.05);
 }
 
 @mixin new-overlay {

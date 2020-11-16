@@ -112,7 +112,7 @@ header,
             width: 325px;
             height: 60px;
             @include box-shadow;
-            transition: 200ms ease-in-out;  
+            transition: 200ms ease-in-out;
             &:hover {
                 @include desc-bg-hover;
             }  
