@@ -53,4 +53,5 @@
 
 @mixin heart-focus {
     background: linear-gradient(180deg,$color-primary 0%,$color-secondary 100%);
+    cursor: pointer;
 }
