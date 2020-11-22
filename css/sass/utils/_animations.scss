@@ -26,13 +26,11 @@
     }
 }
 
-@keyframes rotation{
+@keyframes rotation {
     from {
-        z-index:1;
         transform: rotate(0);
-    } 
+    }
     to {
-    z-index:1;
-    transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
