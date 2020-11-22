@@ -26,11 +26,9 @@
 }
 @keyframes rotation {
   from {
-    z-index: 1;
     transform: rotate(0);
   }
   to {
-    z-index: 1;
     transform: rotate(360deg);
   }
 }
@@ -403,34 +401,70 @@ main,
   color: #99E2D0;
 }
 .section__sub {
+  width: 100%;
+}
+.section__sub__details {
   display: flex;
-  flex-direction: column;
-  padding: 10px;
+  position: relative;
+  border-radius: 12px;
   background-color: white;
   box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   margin: 0 15px 15px 0;
+  margin: 15px 15px 15px 0;
+  cursor: pointer;
 }
-.section__sub__details {
-  display: flex;
-  justify-content: space-between;
+.section__sub:hover .checkmark {
+  width: 75px;
 }
-.section__sub p {
+.section__sub:hover .checkmark > .fa-check-circle {
+  opacity: 1;
+  animation: rotation 500ms ease-in-out;
+}
+.section__sub .meal {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "text1 ." "text2 price";
+  flex-wrap: nowrap;
   margin: 0;
+  padding: 0 10px;
+  width: 100%;
 }
-
-.meal {
-  margin: 0 0 5px 0;
+.section__sub .meal p {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.section__sub .meal p:nth-child(1) {
+  grid-area: text1;
+  margin: 15px 0 5px 0;
+  font-weight: bold;
   font-size: 1.2rem;
 }
-.meal__desc {
-  font-size: 15px;
+.section__sub .meal p:nth-child(2) {
+  grid-area: text2;
+  margin: 0 0 15px 0;
+}
+.section__sub .meal p:nth-child(3) {
+  grid-area: price;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 15px 15px 0;
+  font-weight: bold;
 }
 
-.price {
-  margin: 0;
-  padding-right: 15px;
-  font-weight: bold;
+.checkmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0 12px 12px 0;
+  color: white;
+  width: 0;
+  right: 0;
+  overflow: hidden;
+  transition: width 400ms ease-in-out;
 }
 
 .order {
