@@ -65,32 +65,70 @@ main,
         color: $color-tertiary;
     }
     &__sub {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        @include meal-bg;
+        width: 100%;
         &__details {
             display: flex;
-            justify-content: space-between;
+            position: relative;
+            border-radius: 12px;
+            @include meal-bg;
+            margin: 15px 15px 15px 0;
+            cursor: pointer;
         }
-        p {
+        &:hover .checkmark {
+            width: 75px;
+            > .fa-check-circle {
+            opacity: 1;
+            animation: rotation 500ms ease-in-out;
+            }
+        }
+        .meal {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-areas: 
+                "text1 ."
+                "text2 price";
+            flex-wrap: nowrap;
             margin: 0;
+            padding: 0 10px;
+            width: 100%;
+            p {
+                display: block;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                &:nth-child(1) {
+                    grid-area: text1;
+                    margin: 15px 0 5px 0;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                }
+                &:nth-child(2) {
+                    grid-area: text2;
+                    margin: 0 0 15px 0;
+                }
+                &:nth-child(3) {
+                    grid-area: price;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin : 0 15px 15px 0;
+                    font-weight: bold;
+                }
+            }
         }
     }
 }
 
-.meal {
-    margin: 0 0 5px 0;
-    font-size: 1.2rem;
-    &__desc{
-        font-size: 15px;
-    }
-}
-
-.price {
-    margin: 0;
-    padding-right: 15px;
-    font-weight: bold;
+.checkmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-tertiary;
+    border-radius: 0 12px 12px 0;
+    color: white;
+    width: 0;
+    right: 0;
+    overflow: hidden;
+    transition: width 400ms ease-in-out;
 }
 
 .order {
